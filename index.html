@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Calculator app</title>
+  
+</head>
+<body>
 
-    <title>Frontend Mentor | Order summary card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style></style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="card">
-        <div class="card-head">
-          <img src="./images/illustration-hero.svg" alt="" />
-        </div>
-        <div class="card-body">
-          <h2 class="card-body__title">Order Summary</h2>
-          <p class="card-body__info">
-            You can now listen to milions of songs, audiobooks, and podcasts on
-            any device anywhere you like!
-          </p>
-          <div class="card-body__item">
-            <div class="item-detail">
-              <img src="./images/icon-music.svg" alt="">
-              <div class="item-detail__info">
-                <p>Annual Plan</p>
-                <p class="price">$59.99/year</p>
-              </div>
-            </div>
-            <a href="#">Change</a>
-          </div>
-          <button class="card-body__button">Proceed to Payment</button>
-          <p class="card-body__close">Cancel Order</p>
+  <div class="main">
+    <section class="head">
+      <h2>calc</h2>
+      <div class="head-theme">
+        <p>THEME</p>
+        <div class="head-theme__mode">
+          <p class="mode-title">1 2 3</p>
+          <div class="mode-bg"></div>
+          <div class="mode-switch"></div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Drake Nguyen</a>.
-    </div>
-  </body>
+    <section class="body">
+      <div class="body-screen" id="screen">0</div>
+      <div class="body-numpad">
+        <ul>
+          <li class="numpad data-number">7</li>
+          <li class="numpad data-number">8</li>
+          <li class="numpad data-number">9</li>
+          <li class="numpad data-del">DEL</li>
+          <li class="numpad data-number">4</li>
+          <li class="numpad data-number">5</li>
+          <li class="numpad data-number">6</li>
+          <li class="numpad data-operator">+</li>
+          <li class="numpad data-number">1</li>
+          <li class="numpad data-number">2</li>
+          <li class="numpad data-number">3</li>
+          <li class="numpad data-operator">-</li>
+          <li class="numpad data-number">.</li>
+          <li class="numpad data-number">0</li>
+          <li class="numpad data-operator">/</li>
+          <li class="numpad data-operator">x</li>
+          <li class="numpad data-reset">RESET</li>
+          <li class="numpad data-equal">=</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Drake Nguyen</a>.
+  </div>
+
+  <script src="main.js"></script>
+</body>
 </html>
