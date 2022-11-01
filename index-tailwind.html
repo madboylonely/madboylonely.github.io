@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT GOOGLE -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <!-- TAILWINDCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* font-family: 'Source Sans Pro', sans-serif; */
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body class="max-w-screen-2xl m-auto font-serif">
+    <!-- HEADER -->
+    <header class="font-sans">
+      <nav class="flex justify-between items-center">
+        <div class="flex flex-1 justify-center">
+          <ul class="flex font-bold mr-auto">
+            <li class="mr-10"><a href="#">WORKS</a></li>
+            <li><a href="#">CONTACTS</a></li>
+          </ul>
+        </div>
+        <div class="flex flex-1 justify-center">
+          <a href="./index-tailwind.html">
+            <img src="./page-logo.png" alt="page logo"
+          /></a>
+        </div>
+        <div class="flex flex-1 justify-center">
+          <ul class="flex justify-between w-32 ml-auto">
+            <li>
+              <a href="https://twitter.com/"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://github.com/"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="http://www.facebook.com.vn/"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://dribbble.com/"
+                ><i class="fa-brands fa-dribbble"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section>
+        <h1 class="text-7xl text-clip text-center leading-tight my-20">
+          Bruno Erdison <br />
+          UI/UX Interaction Designer <br />
+          Based in Poland
+        </h1>
+      </section>
+
+      <section class="flex justify-between items-center h-screen">
+        <div class="flex flex-col justify-between items-start w-60 h-5/6">
+          <div>
+            <p class="text-gray-500 mb-12 font-sans">BIOGRAPHY</p>
+            <p class="text-xl leading-9">
+              Work for money and design for love! <br />
+              I'm Bruno, an UI/UX Interaction Designer based in Poland
+            </p>
+          </div>
+          <div>
+            <p class="text-gray-500 mb-12 font-sans">CONTACT</p>
+            <p class="text-xl leading-9">
+              Warsaw, Poland <br />
+              anct304@gmail.com <br />
+              +84 123 456 789
+            </p>
+          </div>
+          <div>
+            <p class="text-gray-500 mb-12 font-sans">SERVICES</p>
+            <p class="text-xl leading-9">
+              Website Design <br />
+              Mobile Application Design Animation
+            </p>
+          </div>
+        </div>
+        <div
+          class="w-2/5 h-full border border-gray-300 rounded-full overflow-hidden p-12"
+        >
+          <div
+            class="h-full overflow-hidden flex justify-center items-start rounded-full"
+          >
+            <img class="max-w-none" src="avatar.jpg" alt="avatar" />
+          </div>
+        </div>
+        <div class="flex flex-col justify-between items-end text-right h-5/6">
+          <div>
+            <p class="text-gray-500 mb-11 font-sans">YEARS OF EXPERIENCE</p>
+            <p class="text-7xl">8</p>
+          </div>
+          <div>
+            <p class="text-gray-500 mb-11 font-sans">SATISFITATION CLIENTS</p>
+            <p class="text-7xl">100%</p>
+          </div>
+          <div>
+            <p class="text-gray-500 mb-11 font-sans">CLIENTS ON WORLDWIDE</p>
+            <p class="text-7xl">+ 80</p>
+          </div>
+          <div class="">
+            <p class="text-gray-500 mb-11 font-sans">PROJECTS DONE</p>
+            <p class="text-7xl">675</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24 border-b border-black">
+        <div class="flex justify-center items-center">
+          <img src="brand.png" alt="brand" />
+        </div>
+      </section>
+
+      <section class="py-24 border-b border-black">
+        <div class="mb-24">
+          <p class="text-center text-5xl">My Advantage</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="flex justify-between items-center py-24 border-t border-black font-sans">
+      <div class="flex flex-1 justify-center">
+        <p class="mr-auto">© 2021 MOONEX. ALL RIGHTS RESERVED</p>
+      </div>
+      <div class="flex flex-1 justify-center">
+        <p>ANCT304@GMAIL.COM</p>
+      </div>
+      <div class="flex flex-1 justify-center">
+        <ul class="flex justify-between w-32 ml-auto">
+          <li>
+            <a href="https://twitter.com/"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="http://www.facebook.com.vn/"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://dribbble.com/"
+              ><i class="fa-brands fa-dribbble"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
