@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- FONT GOOGLE -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- TAILWIND ELEMENT -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
       rel="stylesheet"
-    /> -->
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 
     <!-- TAILWINDCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,7 +38,7 @@
       integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
+    ></script>  
   </head>
   <body class="max-w-screen-2xl m-auto font-serif">
     <!-- HEADER -->
@@ -92,6 +92,7 @@
         </h1>
       </section>
 
+      <!-- avatar -->
       <section class="flex justify-between items-center h-screen">
         <div class="flex flex-col justify-between items-start w-60 h-5/6">
           <div>
@@ -123,7 +124,7 @@
           <div
             class="h-full overflow-hidden flex justify-center items-start rounded-full"
           >
-            <img class="max-w-none" src="avatar.jpg" alt="avatar" />
+            <img class="max-w-none" src="./img/avatar.jpg" alt="avatar" />
           </div>
         </div>
         <div class="flex flex-col justify-between items-end text-right h-5/6">
@@ -146,58 +147,219 @@
         </div>
       </section>
 
+      <!-- brand -->
       <section class="py-24 border-b border-black">
         <div class="flex justify-center items-center">
-          <img src="brand.png" alt="brand" />
+          <img src="./img/brand.png" alt="brand" />
         </div>
       </section>
 
+      <!-- My Advantage -->
       <section class="py-24 border-b border-black">
         <div class="mb-24">
           <p class="text-center text-5xl">My Advantage</p>
         </div>
         <div class="flex justify-between items-center">
           <div class="flex flex-col justify-between items-center">
-            <div class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80">
-              <img class="w-24" src="figma.png" alt="figma" />
+            <div
+              class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80"
+            >
+              <img class="w-24" src="./img/tools/figma.png" alt="figma" />
               <p class="text-5xl">90%</p>
             </div>
             <p>Figma</p>
           </div>
           <div class="flex flex-col justify-between items-center">
-            <div class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80">
-              <img class="w-24" src="sketch.png" alt="sketch" />
+            <div
+              class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80"
+            >
+              <img class="w-24" src="./img/tools/sketch.png" alt="sketch" />
               <p class="text-5xl">90%</p>
             </div>
             <p>Sketch</p>
           </div>
           <div class="flex flex-col justify-between items-center">
-            <div class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80">
-              <img class="w-24" src="adobe.png" alt="adobe xd" />
+            <div
+              class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80"
+            >
+              <img class="w-24" src="./img/tools/adobe.png" alt="adobe xd" />
               <p class="text-5xl">82%</p>
             </div>
             <p>Adobe XD</p>
           </div>
           <div class="flex flex-col justify-between items-center">
-            <div class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80">
-              <img class="w-24" src="invision.png" alt="invision" />
+            <div
+              class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80"
+            >
+              <img class="w-24" src="./img/tools/invision.png" alt="invision" />
               <p class="text-5xl">93%</p>
             </div>
             <p>Invisionapp</p>
           </div>
           <div class="flex flex-col justify-between items-center">
-            <div class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80">
-              <img class="w-24" src="bootstrap.png" alt="bootstrap" />
+            <div
+              class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80"
+            >
+              <img class="w-24" src="./img/tools/bootstrap.png" alt="bootstrap" />
               <p class="text-5xl">76%</p>
             </div>
             <p>Bootstrap</p>
           </div>
           <div class="flex flex-col justify-between items-center">
-            <div class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80">
-              <img class="w-24" src="html.png" alt="html/css" />
+            <div
+              class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80"
+            >
+              <img class="w-24" src="./img/tools/html.png" alt="html/css" />
               <p class="text-5xl">88%</p>
             </div>
             <p>HTML5/CSS</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education & Experience -->
+      <section class="py-24 border-b border-black">
+        <div class="mb-24">
+          <p class="text-center text-5xl">Education & Experience</p>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <p class="text-gray-500 mb-12 font-sans">2014</p>
+            <p class="text-2xl leading-9">Bachelor Degree of Design</p>
+            <p class="text-gray-500 mb-12 font-sans">RMIT University, US</p>
+            <p class="text-2xl leading-9">UI/UX Design Certificate</p>
+            <p class="text-gray-500 mb-12 font-sans">
+              University of Houston, US
+            </p>
+          </div>
+          <div>
+            <p class="text-gray-500 mb-12 font-sans">2015 - 2019</p>
+            <p class="text-2xl leading-9">Design Internship</p>
+            <p class="text-gray-500 mb-12 font-sans">CMC Corporation, UK</p>
+            <p class="text-2xl leading-9">Graphic Designer</p>
+            <p class="text-gray-500 mb-12 font-sans">Tripadvisor Ltd, UK</p>
+            <p class="text-2xl leading-9">Leader Graphic Design</p>
+            <p class="text-gray-500 mb-12 font-sans">
+              New Centery Media JSC, UK
+            </p>
+            <p class="text-2xl leading-9">Web Designer</p>
+            <p class="text-gray-500 mb-12 font-sans">Freelancer</p>
+            <p class="text-2xl leading-9">Web Designer/Author</p>
+            <p class="text-gray-500 mb-12 font-sans">Envato Market</p>
+          </div>
+          <div>
+            <p class="text-gray-500 mb-12 font-sans">2020 - PRESENT</p>
+            <p class="text-2xl leading-9">Product Design Management</p>
+            <p class="text-gray-500 mb-12 font-sans">Dribble LLC, US</p>
+            <p class="text-2xl leading-9">Art Director / Co-Founder</p>
+            <p class="text-gray-500 mb-12 font-sans">Spotify</p>
+            <p class="text-2xl leading-9">Founder</p>
+            <p class="text-gray-500 mb-12 font-sans">iDesign Magazine</p>
+            <p class="text-2xl leading-9">Author of The Book</p>
+            <p class="text-gray-500 mb-12 font-sans">
+              Work for Money, Design for Love
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Latest Projects -->
+      <section class="py-24 pb-36 border-b border-black">
+        <div class="mb-24">
+          <p class="text-center text-5xl">My Latest Projects</p>
+        </div>
+
+        <div
+          id="carouselProjectIndicators"
+          class="carousel slide relative"
+          data-bs-ride="carousel"
+        >
+          <div
+            class="carousel-indicators absolute right-0 -bottom-24 left-0 flex justify-center p-0 mb-4"
+          >
+            <button
+              type="button"
+              data-bs-target="#carouselProjectIndicators"
+              data-bs-slide-to="0"
+              class="active w-2 h-2"
+              aria-current="true"
+              aria-label="Slide 1"
+              style="width: 10px; height: 10px; border-radius: 50%; background-color: black;"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselProjectIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              style="width: 10px; height: 10px; border-radius: 50%; background-color: black;"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselProjectIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              style="width: 10px; height: 10px; border-radius: 50%; background-color: black;"
+            ></button>
+          </div>
+          <div class="carousel-inner relative w-full overflow-hidden">
+            <div class="carousel-item active float-left w-full">
+              <div class="flex justify-between items-center">
+                <div class="flex-1">
+                  <img class="h-full w-full max-w-none" src="https://previews.123rf.com/images/nadianb/nadianb1709/nadianb170900256/86443804-idyllic-landscape-in-mountains-rural-scene-beautiful-nature-image-toned-square.jpg" alt="project 1">
+                  <p class="text-gray-500 mt-12 mb-3 font-sans">Web Design</p>
+                  <p class="text-3xl font-sans">Supro Online Store</p>
+                </div>
+                <div class="flex-1 mx-16">
+                  <img src="https://captainkimo.s3.amazonaws.com/wp-content/uploads/2016/09/22211618/Pine-Glades-Wetlands-Natural-Area-Sunset-Square.jpg" alt="project 2">
+                  <p class="text-gray-500 mt-12 mb-3 font-sans">Illustration</p>
+                  <p class="text-3xl font-sans">LW Poster</p>
+                </div>
+                <div class="flex-1">
+                  <img src="https://images.fineartamerica.com/images-medium-large/nature-square--saddleback-dragonfly-carol-groenen.jpg" alt="project 3">
+                  <p class="text-gray-500 mt-12 mb-3 font-sans">Advertising</p>
+                  <p class="text-3xl font-sans">Firm & Art Festival</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item float-left w-full">
+              <div class="flex justify-between items-center">
+                <div class="flex-1">
+                  <img class="h-full w-full max-w-none" src="https://i.natgeofe.com/n/49f1c59b-095d-47a6-b72c-92bc6740a37c/tpc18-outdoor-gallery-1693450-12040196_03_square.jpg" alt="project 1">
+                  <p class="text-gray-500 mt-12 mb-3 font-sans">Web Design</p>
+                  <p class="text-3xl font-sans">Supro Online Store</p>
+                </div>
+                <div class="flex-1 mx-16">
+                  <img src="https://i.natgeofe.com/n/9b08f7dc-69ba-4f04-9f0f-f280eb6962f5/50-iconic-andes-mountains-chile_square.jpg" alt="project 2">
+                  <p class="text-gray-500 mt-12 mb-3 font-sans">Illustration</p>
+                  <p class="text-3xl font-sans">LW Poster</p>
+                </div>
+                <div class="flex-1">
+                  <img src="https://i.natgeofe.com/n/bd1f6f6e-163c-4a71-a275-8a68ce8a06d3/GettyImages-1334181334_square.jpg" alt="project 3">
+                  <p class="text-gray-500 mt-12 mb-3 font-sans">Advertising</p>
+                  <p class="text-3xl font-sans">Firm & Art Festival</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item float-left w-full">
+              <div class="flex justify-between items-center">
+                <div class="flex-1">
+                  <img class="h-full w-full max-w-none" src="https://i.natgeofe.com/k/0570708f-34fd-4373-bcc5-2aa832d76b3d/ww-nature-aurora-canada_square.jpg" alt="project 1">
+                  <p class="text-gray-500 mt-12 mb-3 font-sans">Web Design</p>
+                  <p class="text-3xl font-sans">Supro Online Store</p>
+                </div>
+                <div class="flex-1 mx-16">
+                  <img src="https://baynature.org/wp-content/uploads/2019/12/200118-SQUARE.jpg" alt="project 2">
+                  <p class="text-gray-500 mt-12 mb-3 font-sans">Illustration</p>
+                  <p class="text-3xl font-sans">LW Poster</p>
+                </div>
+                <div class="flex-1">
+                  <img src="https://www.wbcsd.org/var/site/storage/images/imperatives/nature-action/201143-1-eng-GB/Nature-Action_720_square.jpg" alt="project 3">
+                  <p class="text-gray-500 mt-12 mb-3 font-sans">Advertising</p>
+                  <p class="text-3xl font-sans">Firm & Art Festival</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -208,7 +370,7 @@
       class="flex justify-between items-center py-24 border-t border-black font-sans"
     >
       <div class="flex flex-1 justify-center">
-        <p class="mr-auto">© 2021 MOONEX. ALL RIGHTS RESERVED</p>
+        <p class="mr-auto">© 2022 MOONEX. ALL RIGHTS RESERVED</p>
       </div>
       <div class="flex flex-1 justify-center">
         <p>ANCT304@GMAIL.COM</p>
