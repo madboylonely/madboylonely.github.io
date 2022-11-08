@@ -40,13 +40,13 @@
       referrerpolicy="no-referrer"
     ></script>
   </head>
-  <body class="2xl:max-w-screen-2xl m-auto font-serif xl:max-w-screen-xl lg:max-w-lg">
+  <body class="2xl:max-w-screen-2xl m-auto font-serif xl:max-w-screen-xl lg:max-w-lg sm:max-w-sm">
     <!-- HEADER -->
     <header class="font-sans">
-      <nav class="flex justify-between items-center">
-        <div class="flex flex-1 justify-center">
+      <nav class="flex justify-between items-center lg:flex-row sm:flex-col lg:m-0 sm:p-5">
+        <div class="flex flex-1 justify-center lg:m-0 sm:mb-5">
           <ul class="flex font-bold mr-auto">
-            <li class="xl:mr-10 lg:mr-5"><a href="#">WORKS</a></li>
+            <li class="xl:mr-10 lg:mr-5 sm:mr-5"><a href="#">WORKS</a></li>
             <li><a href="#">CONTACTS</a></li>
           </ul>
         </div>
@@ -55,7 +55,7 @@
             <img src="./img/page-logo.png" alt="page logo"
           /></a>
         </div>
-        <div class="flex flex-1 justify-center">
+        <div class="flex flex-1 justify-center lg:block sm:hidden">
           <ul class="flex justify-between w-32 ml-auto">
             <li>
               <a href="https://twitter.com/"
@@ -85,7 +85,7 @@
     <!-- MAIN -->
     <main>
       <section>
-        <h1 class="text-7xl text-clip text-center leading-tight xl:my-20 lg:my-10 xl:text-7xl lg:text-4xl">
+        <h1 class="text-clip text-center leading-tight xl:my-20 lg:my-10 sm:my-10 xl:text-7xl lg:text-4xl sm:text-3xl">
           Denny Dat Hoang Tran <br />
           A Talent Student <br />
           in Vietnam
@@ -93,36 +93,47 @@
       </section>
 
       <!-- avatar -->
-      <section class="flex justify-between items-center xl:h-screen lg:h-[700px]">
+      <div class="flex flex-1 justify-center m-auto lg:h-[500px] sm:h-[300px] lg:w-[500px] sm:w-[300px] xl:hidden lg:block">
+        <div
+          class="h-full w-full border border-gray-300 rounded-full overflow-hidden lg:p-12 sm:p-6 m-auto"
+        >
+          <div
+            class="h-full overflow-hidden flex justify-center items-start rounded-full"
+          >
+            <img class="max-w-none w-[100%]" src="./img/avatar.jpg" alt="avatar" />
+          </div>
+        </div>
+      </div>
+      <section class="flex justify-between items-center xl:h-screen lg:h-[700px] lg:flex-row sm:flex-col-reverse lg:m-auto sm:mt-10">
         <div class="flex flex-1 justify-center h-full">
           <div
-            class="flex flex-col justify-evenly items-start w-60 mr-auto h-full"
+            class="flex flex-col justify-evenly lg:items-start sm:items-center lg:text-left sm:text-center w-60 mr-auto h-full lg:m-auto sm:m-10"
           >
-            <div>
-              <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">BIOGRAPHY</p>
-              <p class="text-xl leading-9 xl:text-xl lg:text-lg">
+            <div class="lg:m-auto sm:my-5">
+              <p class="text-gray-500 xl:mb-12 lg:mb-6 sm:mb-3 font-sans">BIOGRAPHY</p>
+              <p class="text-xl leading-9 xl:text-xl lg:text-lg sm:text-lg">
                 Work for money and develope for love! <br />
                 I'm Denny, a Talent Student in Vietnam
               </p>
             </div>
-            <div>
-              <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">CONTACT</p>
-              <p class="text-xl leading-9 xl:text-xl lg:text-lg">
+            <div class="lg:m-auto sm:my-5">
+              <p class="text-gray-500 xl:mb-12 lg:mb-6 sm:mb-3 font-sans">CONTACT</p>
+              <p class="text-xl leading-9 xl:text-xl lg:text-lg sm:text-lg">
                 243/2/11 Chu Van An, Binh Thanh, HCMC, Vietnam <br />
                 dennydattran.vas@gmail.com <br />
                 +84 901 345 876
               </p>
             </div>
-            <div>
-              <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">SERVICES</p>
-              <p class="text-xl leading-9 xl:text-xl lg:text-lg">
+            <div class="lg:m-auto sm:my-5">
+              <p class="text-gray-500 xl:mb-12 lg:mb-6 sm:mb-3 font-sans">SERVICES</p>
+              <p class="text-xl leading-9 xl:text-xl lg:text-lg sm:text-lg">
                 Sport Trainer <br />
                 Software Developement
               </p>
             </div>
           </div>
         </div>
-        <div class="flex flex-1 justify-center h-full xl:w-[850px] xl:block lg:hidden">
+        <div class="flex flex-1 justify-center h-full xl:w-[850px] xl:block sm:hidden">
           <div
             class="w-3/5 h-full border border-gray-300 rounded-full overflow-hidden p-12 m-auto"
           >
@@ -133,17 +144,17 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-1 justify-center h-full">
+        <div class="flex flex-1 justify-center h-full lg:w-auto sm:w-full">
           <div
-            class="flex flex-col justify-evenly items-end text-right h-5/6 ml-auto"
+            class="flex lg:flex-col sm:flex-row lg:w-auto sm:w-full justify-evenly items-end lg:text-right sm:text-center h-5/6 ml-auto"
           >
             <div>
               <p class="text-gray-500 xl:mb-11 lg:mb-7 font-sans">IELTS CERTIFICATE</p>
-              <p class="text-7xl xl:text-7xl lg:text-4xl">8.5</p>
+              <p class="text-7xl xl:text-7xl lg:text-4xl sm:text-3xl">8.5</p>
             </div>
             <div>
               <p class="text-gray-500 xl:mb-11 lg:mb-7 font-sans">SAT CERTIFICATE</p>
-              <p class="text-7xl xl:text-7xl lg:text-4xl">1510</p>
+              <p class="text-7xl xl:text-7xl lg:text-4xl sm:text-3xl">1510</p>
             </div>
             <!-- <div>
               <p class="text-gray-500 mb-11 font-sans">CLIENTS ON WORLDWIDE</p>
@@ -158,84 +169,84 @@
       </section>
 
       <!-- brand -->
-      <section class="xl:py-24 lg:py-12 border-b border-black">
+      <section class="xl:py-24 lg:py-12 sm:pb-6 border-b border-black">
         <div class="flex justify-center items-center">
           <img src="./img/brand.png" alt="brand" />
         </div>
       </section>
 
       <!-- My Advantage -->
-      <section class="xl:py-24 lg:py-12 border-b border-black">
-        <div class="xl:mb-24 lg:mb-12">
-          <p class="text-center xl:text-5xl lg:text-3xl">My Advantage</p>
+      <section class="xl:py-24 lg:py-12 sm:py-6 border-b border-black">
+        <div class="xl:mb-24 lg:mb-12 sm:mb-6">
+          <p class="text-center xl:text-5xl lg:text-3xl sm:text-2xl">My Advantage</p>
         </div>
-        <div class="flex justify-between items-center flex-wrap">
+        <div class="flex justify-between items-center flex-wrap lg:flex-row sm:flex-col">
           <div class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%]">
             <div class="flex flex-col justify-between items-center">
               <div
-                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80"
+                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 lg:h-80 sm:h-56"
               >
-                <img class="w-24" src="./img/tools/cpp.png" alt="cpp" />
-                <p class="text-5xl">90%</p>
+                <img class="lg:w-24 sm:w-16" src="./img/tools/cpp.png" alt="cpp" />
+                <p class="lg:text-5xl sm:text-2xl lg:mt-auto sm:mt-5">90%</p>
               </div>
               <p>C ++</p>
             </div>
           </div>
-          <div class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%]">
+          <div class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%] lg:mt-0 sm:mt-6">
             <div class="flex flex-col justify-between items-center">
               <div
-                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80"
+                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 lg:h-80 sm:h-56"
               >
-                <img class="w-24" src="./img/tools/french.png" alt="french" />
-                <p class="text-5xl">90%</p>
+                <img class="lg:w-24 sm:w-16" src="./img/tools/french.png" alt="french" />
+                <p class="lg:text-5xl sm:text-2xl lg:mt-auto sm:mt-5">90%</p>
               </div>
               <p>French</p>
             </div>
           </div>
-          <div class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%] lg:mt-12">
+          <div class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%] xl:mt-0 lg:mt-12 sm:mt-6">
             <div class="flex flex-col justify-between items-center">
               <div
-                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80"
+                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 lg:h-80 sm:h-56"
               >
-                <img class="w-24" src="./img/tools/english.png" alt="english" />
-                <p class="text-5xl">82%</p>
+                <img class="lg:w-24 sm:w-16" src="./img/tools/english.png" alt="english" />
+                <p class="lg:text-5xl sm:text-2xl lg:mt-auto sm:mt-5">82%</p>
               </div>
               <p>English</p>
             </div>
           </div>
-          <div class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%] 2xl:mt-0 xl:mt-24 lg:mt-12">
+          <div class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%] 2xl:mt-0 xl:mt-24 lg:mt-12 sm:mt-6">
             <div class="flex flex-col justify-between items-center">
               <div
-                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80"
+                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 lg:h-80 sm:h-56"
               >
-                <img class="w-24" src="./img/tools/chess.png" alt="chess" />
-                <p class="text-5xl">93%</p>
+                <img class="lg:w-24 sm:w-16" src="./img/tools/chess.png" alt="chess" />
+                <p class="lg:text-5xl sm:text-2xl lg:mt-auto sm:mt-5">93%</p>
               </div>
               <p>Chess</p>
             </div>
           </div>
-          <div class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%] 2xl:mt-0 xl:mt-24 lg:mt-12">
+          <div class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%] 2xl:mt-0 xl:mt-24 lg:mt-12 sm:mt-6">
             <div class="flex flex-col justify-between items-center">
               <div
-                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80"
+                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 lg:h-80 sm:h-56"
               >
-                <img class="w-24" src="./img/tools/soccer.png" alt="soccer" />
-                <p class="text-5xl">76%</p>
+                <img class="lg:w-24 sm:w-16" src="./img/tools/soccer.png" alt="soccer" />
+                <p class="lg:text-5xl sm:text-2xl lg:mt-auto sm:mt-5">76%</p>
               </div>
               <p>Soccer</p>
             </div>
           </div>
-          <div class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%] 2xl:mt-0 xl:mt-24 lg:mt-12">
+          <div class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%] 2xl:mt-0 xl:mt-24 lg:mt-12 sm:mt-6">
             <div class="flex flex-col justify-between items-center">
               <div
-                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 h-80"
+                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 lg:h-80 sm:h-56"
               >
                 <img
-                  class="w-24"
+                  class="lg:w-24 sm:w-16"
                   src="./img/tools/basketball.png"
                   alt="basketball"
-                />
-                <p class="text-5xl">88%</p>
+              />
+            <p class="lg:text-5xl sm:text-2xl lg:mt-auto sm:mt-5">88%</p>
               </div>
               <p>Basketball</p>
             </div>
@@ -244,56 +255,56 @@
       </section>
 
       <!-- Education & Experience -->
-      <section class="xl:py-24 lg:py-12 border-b border-black">
-        <div class="xl:mb-24 lg:mb-12">
-          <p class="text-center xl:text-5xl lg:text-3xl">Education & Hornor Awards</p>
+      <section class="xl:py-24 lg:py-12 sm:py-6 border-b border-black">
+        <div class="xl:mb-24 lg:mb-12 sm:mb-6">
+          <p class="text-center xl:text-5xl lg:text-3xl sm:text-2xl">Education & Hornor Awards</p>
         </div>
 
-        <div class="flex justify-between items-start flex-wrap">
+        <div class="flex xl:justify-between sm:justify-center xl:items-start sm:items-center flex-wrap xl:text-left sm:text-center">
           <div>
-            <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">2017 - 2019</p>
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">2017 - 2019</p>
             <p class="xl:text-2xl lg:text-xl leading-9">Gold Medal in Math Olympiad</p>
-            <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">
               Singapore and Asian Schools Math Olympiad
             </p>
             <p class="xl:text-2xl lg:text-xl leading-9">Gold Medal in Math Olympiad</p>
-            <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">
               American Mathematics Olympiad
             </p>
             <p class="xl:text-2xl lg:text-xl leading-9">6 Gold & 4 Silver Medals</p>
-            <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">
               World Scholars Cup Debate Competition
             </p>
           </div>
           <div>
-            <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">2019 - 2022</p>
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">2019 - 2022</p>
             <p class="xl:text-2xl lg:text-xl leading-9">Secondary School Diploma</p>
-            <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">
               Tran Dai Ngia High School for the Gifted, VN
             </p>
             <p class="xl:text-2xl lg:text-xl leading-9">First Prize – 15th Ranked</p>
-            <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">
               Municipal English Merit Competition for grade 9 students
             </p>
             <p class="xl:text-2xl lg:text-xl leading-9">First Prize – 11th Ranked</p>
-            <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">
               Municipal English Merit Competition for high school students
             </p>
             <p class="xl:text-2xl lg:text-xl leading-9">
               Member of the Municipal English team
             </p>
-            <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">
               Participate in the National English Merit Competition
             </p>
           </div>
           <div>
-            <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">2020 - PRESENT</p>
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">2020 - PRESENT</p>
             <p class="xl:text-2xl lg:text-xl leading-9">High School Diploma</p>
-            <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">
               Tran Dai Ngia High School for the Gifted, VN
             </p>
             <p class="xl:text-2xl lg:text-xl leading-9">Honors in English</p>
-            <p class="text-gray-500 xl:mb-12 lg:mb-6 font-sans">
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">
               Advanced Coursework in English, VN
             </p>
           </div>
@@ -301,9 +312,9 @@
       </section>
 
       <!-- My Latest Projects -->
-      <section class="xl:py-24 lg:py-12 xl:pb-48 lg:pb-24 border-b border-black">
-        <div class="xl:mb-24 lg:mb-12">
-          <p class="text-center xl:text-5xl lg:text-3xl">My Latest Projects</p>
+      <section class="xl:py-24 lg:py-12 sm:py-6 xl:pb-48 sm:pb-24 border-b border-black">
+        <div class="xl:mb-24 lg:mb-12 sm:mb-6">
+          <p class="text-center xl:text-5xl lg:text-3xl sm:text-2xl">My Latest Projects</p>
         </div>
 
         <div
@@ -410,14 +421,14 @@
                   </p>
                   <p class="xl:text-3xl lg:text-xl font-sans">Hans For Hans Vietnam</p>
                 </div>
-                <div class="flex-1 xl:flex-[32%] xl:max-w-[32%] lg:flex-[48%] lg:max-w-[48%]">
+                <div class="flex-1 xl:flex-[32%] xl:max-w-[32%] lg:flex-[48%] lg:max-w-[48%] lg:block sm:hidden">
                   <img src="./img/projects/gentalk.jpg" alt="gentalk" />
                   <p class="text-gray-500 mt-12 mb-3 font-sans truncate xl:text-md ">
                     A nonprofit organization that provides education
                   </p>
                   <p class="xl:text-3xl lg:text-xl font-sans">GenTalk Vietnam</p>
                 </div>
-                <div class="flex-1 xl:flex-[32%] xl:max-w-[32%] xl:block lg:hidden">
+                <div class="flex-1 xl:flex-[32%] xl:max-w-[32%] xl:block sm:hidden">
                   <img
                     src="./img/projects/englishclub.jpg"
                     alt="english club"
@@ -461,7 +472,14 @@
             </div>
             <div class="carousel-item float-left w-full">
               <div class="flex justify-between items-center">
-                <div class="flex-1">
+                <div class="flex-1 xl:flex-[32%] xl:max-w-[32%] lg:flex-[48%] lg:max-w-[48%]">
+                  <img src="./img/projects/gentalk.jpg" alt="gentalk" />
+                  <p class="text-gray-500 mt-12 mb-3 font-sans truncate xl:text-md ">
+                    A nonprofit organization that provides education
+                  </p>
+                  <p class="xl:text-3xl lg:text-xl font-sans">GenTalk Vietnam</p>
+                </div>
+                <!-- <div class="flex-1">
                   <img
                     class="h-full w-full max-w-none"
                     src="https://i.natgeofe.com/k/0570708f-34fd-4373-bcc5-2aa832d76b3d/ww-nature-aurora-canada_square.jpg"
@@ -485,7 +503,7 @@
                   />
                   <p class="text-gray-500 mt-12 mb-3 font-sans">Advertising</p>
                   <p class="text-3xl font-sans">Firm & Art Festival</p>
-                </div>
+                </div> -->
               </div>
             </div>
             <!-- <div class="carousel-item float-left w-full">
@@ -580,7 +598,7 @@
       </section>
 
       <!-- Quotes -->
-      <section class="xl:py-24 lg:py-12">
+      <section class="xl:py-24 lg:py-12 sm:py-6">
         <div
           id="carouselQuoteControls"
           class="carousel slide relative"
@@ -591,7 +609,7 @@
               <div class="flex flex-col justify-between items-center">
                 <div class="flex justify-center items-center">
                   <p
-                    class="xl:text-4xl lg:text-2xl text-center w-2/3 xl:leading-[60px] lg:leading-10"
+                    class="xl:text-4xl lg:text-2xl sm:text-xl text-center w-2/3 xl:leading-[60px] lg:leading-10"
                   >
                     "Bruno was a real pleasure to work with and we look <br />
                     forward to working with him again. He's definitely the kind
@@ -600,8 +618,8 @@
                     Great services & Recommended!"
                   </p>
                 </div>
-                <p class="xl:text-3xl lg:text-2xl font-bold mt-12 mb-3">Jurgen Kloop</p>
-                <p class="font-sans xl:text-xl lg:text-sm">
+                <p class="xl:text-3xl lg:text-2xl sm:text-xl font-bold mt-12 mb-3">Jurgen Kloop</p>
+                <p class="font-sans xl:text-xl sm:text-sm">
                   Product Management <span class="text-gray-400">at </span>
                   <a class="text-blue-600" href="https://about.google/"
                     >Google Inc</a
@@ -660,7 +678,7 @@
             data-bs-target="#carouselQuoteControls"
             data-bs-slide="prev"
           >
-            <i class="fa-solid fa-angle-left text-5xl text-black"></i>
+            <i class="fa-solid fa-angle-left xl:text-5xl lg:text-3xl sm:text-2xl text-black"></i>
             <span class="visually-hidden">Previous</span>
           </button>
           <button
@@ -669,19 +687,19 @@
             data-bs-target="#carouselQuoteControls"
             data-bs-slide="next"
           >
-            <i class="fa-solid fa-angle-right text-5xl text-black"></i>
+            <i class="fa-solid fa-angle-right xl:text-5xl lg:text-3xl sm:text-2xl text-black"></i>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
       </section>
 
       <!-- instagram -->
-      <section class="xl:py-24 lg:py-12">
-        <div class="xl:mb-24 lg:mb-12">
-          <p class="text-center xl:text-5xl lg:text-3xl">@dennydattran</p>
+      <section class="xl:py-24 lg:py-12 sm:py-6">
+        <div class="xl:mb-24 lg:mb-12 sm:mb-6">
+          <p class="text-center xl:text-5xl lg:text-3xl sm:text-2xl">@dennydattran</p>
         </div>
 
-        <div class="grid grid-cols-5 gap-4 w-full">
+        <div class="grid xl:grid-cols-5 lg:grid-cols-3 gap-4 w-full">
           <img
             src="https://captainkimo.s3.amazonaws.com/wp-content/uploads/2016/09/22211618/Pine-Glades-Wetlands-Natural-Area-Sunset-Square.jpg"
             alt=""
@@ -706,7 +724,7 @@
       </section>
 
       <!-- call bruno -->
-      <section class="flex justify-center items-center xl:my-28 lg:my-12">
+      <section class="flex justify-center items-center xl:my-28 lg:my-12 sm:my-6">
         <a href="#">
           <img src="./img/call.png" alt="call bruno" />
         </a>
@@ -715,12 +733,12 @@
 
     <!-- FOOTER -->
     <footer
-      class="flex justify-between items-center xl:py-24 border-t border-black font-sans xl:flex-row lg:flex-col lg:py-12 lg:flex-wrap"
+      class="flex justify-between items-center xl:py-24 border-t border-black font-sans xl:flex-row sm:flex-col lg:py-12 sm:py-6 lg:flex-wrap"
     >
-      <div class="flex flex-1 justify-center lg:mb-5">
+      <div class="flex flex-1 justify-center lg:mb-5 sm:mb-3">
         <p class="mr-auto">© 2022 MOONEX. ALL RIGHTS RESERVED</p>
       </div>
-      <div class="flex flex-1 justify-center lg:mb-5">
+      <div class="flex flex-1 justify-center lg:mb-5 sm:mb-3">
         <p>DENNYDATTRAN.VAS@GMAIL.COM</p>
       </div>
       <div class="flex flex-1 justify-center">
