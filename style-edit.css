@@ -476,6 +476,9 @@ img, video {
     .sm\:pb-24 {
         padding-bottom: 6rem;
     }
+    .sm\:m-4 {
+        margin: 1rem;
+    }
     .sm\:m-10 {
         margin: 2.5rem;
     }
@@ -560,6 +563,9 @@ img, video {
     }
     .sm\:w-\[300px\] {
         width: 300px;
+    }
+    .sm\:w-\[250px\] {
+        width: 250px;
     }
     .sm\:items-center {
         align-items: center;
