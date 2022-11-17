@@ -14,26 +14,34 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./owlCarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlCarousel/dist/assets/owl.theme.default.min.css">
+
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
   </head>
-  <body style="max-width: 1560px; margin: 0 auto">
+  <body
+    class="m-auto font-serif sm:max-w-sm lg:max-w-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl"
+  >
     <!-- HEADER -->
-    <header>
-      <nav>
-        <div class="nav-left">
-          <ul>
-            <li><a href="#">WORKS</a></li>
+    <header class="font-sans">
+      <nav
+        class="flex justify-between items-center lg:flex-row sm:flex-col lg:m-0 sm:p-5"
+      >
+        <div class="flex flex-1 justify-center lg:m-0 sm:mb-5">
+          <ul class="flex font-bold mr-auto">
+            <li class="xl:mr-10 lg:mr-5 sm:mr-5"><a href="#">WORKS</a></li>
             <li><a href="#">CONTACTS</a></li>
           </ul>
         </div>
-        <div class="nav-middle">
+        <div class="flex flex-1 justify-center">
           <a href="./index.html">
-            <img src="./img/page-logo.png" alt="page logo" />
-          </a>
+            <img src="./img/page-logo-new.png" alt="page logo"
+          /></a>
         </div>
-        <div class="nav-right">
-          <ul>
+        <div class="flex flex-1 justify-center lg:block sm:hidden">
+          <ul class="flex justify-between w-32 ml-auto">
             <li>
               <a href="https://twitter.com/"
                 ><i class="fa-brands fa-twitter"></i
@@ -60,147 +68,421 @@
     </header>
 
     <!-- MAIN -->
-    <main>
-      <!-- MAIN TEXT -->
-      <section class="main-text">
-        <h1>
-          Denny Dat Hoang Tran <br />
-          A Talent Student <br />
-          in Vietnam
+    <main class="w-full">
+      <section>
+        <h1
+          class="text-clip text-center leading-tight xl:my-20 lg:my-10 sm:my-10 xl:text-7xl lg:text-4xl sm:text-3xl"
+        >
+          Huynh Minh Hoang
         </h1>
       </section>
 
-      <!-- MAIN AVATAR -->
-      <section class="main-avatar">
-        <!-- LEFT PARAGRAPH TEXT -->
-        <div class="main-avatar__left">
-          <div class="paragraph-left">
-            <div class="paragraph-left__label"></div>
-            <div class="paragraph-left__text"></div>
+      <!-- Avatar -->
+      <div
+        class="flex flex-1 justify-center m-auto lg:h-[500px] sm:h-[300px] lg:w-[500px] sm:w-[250px] xl:hidden lg:block"
+      >
+        <div
+          class="h-full w-full border border-gray-300 rounded-full overflow-hidden lg:p-12 sm:p-6 m-auto"
+        >
+          <div
+            class="h-full overflow-hidden flex justify-center items-start rounded-full"
+          >
+            <img
+              class="max-w-none w-full"
+              src="./img/avatar.jpg"
+              alt="avatar"
+            />
           </div>
-          <div class="paragraph-left"></div>
-          <div class="paragraph-left"></div>
         </div>
-        <!-- AVATAR -->
-        <div class="main-avatar__middle">
-          <div class="avatar">
-            <img src="" alt="" />
+      </div>
+      <section
+        class="flex justify-between items-center xl:h-screen lg:h-[700px] lg:flex-row sm:flex-col-reverse lg:m-auto sm:mt-10"
+      >
+        <div class="flex flex-1 justify-center h-full">
+          <div
+            class="flex flex-col justify-evenly lg:items-start sm:items-center lg:text-left sm:text-center w-60 mr-auto h-full lg:m-auto sm:m-10"
+          >
+            <!-- <div class="lg:m-0 sm:my-5">
+              <p class="text-gray-500 xl:mb-12 lg:mb-6 sm:mb-3 font-sans">
+                BIOGRAPHY
+              </p>
+              <p class="text-xl leading-9 xl:text-xl lg:text-lg sm:text-lg">
+                Work for money and develope for love! <br />
+                I'm Denny, a Talent Student in Vietnam
+              </p>
+            </div> -->
+            <div class="lg:m-0 sm:my-5">
+              <p class="text-gray-500 xl:mb-12 lg:mb-6 sm:mb-3 font-sans">
+                CONTACT
+              </p>
+              <p class="text-xl leading-9 xl:text-xl lg:text-lg sm:text-lg">
+                26/19 Le Van Duyet, District Binh Thanh, HCMC, VN <br />
+                hoangminhhuynh1204@gmail.com <br />
+                +84 901 317 459
+              </p>
+            </div>
+            <!-- <div class="lg:m-0 sm:my-5">
+              <p class="text-gray-500 xl:mb-12 lg:mb-6 sm:mb-3 font-sans">
+                SERVICES
+              </p>
+              <p class="text-xl leading-9 xl:text-xl lg:text-lg sm:text-lg">
+                Sport Trainer <br />
+                Software Developement
+              </p>
+            </div> -->
           </div>
         </div>
-        <!-- RIGHT PARAGRAPH TEXT -->
-        <div class="main-avatar__right">
-          <div class="paragraph-right">
-            <div class="paragraph-right__label"></div>
-            <div class="paragraph-right__text"></div>
-          </div>
-          <div class="paragraph-right"></div>
-          <div class="paragraph-right"></div>
-          <div class="paragraph-right"></div>
-        </div>
-      </section>
-
-      <!-- MAIN LOGO -->
-      <section class="main-logo">
-        <div class="logo"></div>
-        <div class="logo"></div>
-        <div class="logo"></div>
-        <div class="logo"></div>
-      </section>
-
-      <!-- ADVANTAGE -->
-      <section class="main-advantage">
-        <div class="main-advantage__text section-text"></div>
-        <div class="main-advantage__items">
-          <div class="main-advantage__item"></div>
-          <div class="main-advantage__item"></div>
-          <div class="main-advantage__item"></div>
-          <div class="main-advantage__item"></div>
-          <div class="main-advantage__item"></div>
-          <div class="main-advantage__item"></div>
-        </div>
-      </section>
-
-      <!-- EDUCATION -->
-      <section class="main-education">
-        <div class="main-education__text section-text"></div>
-        <div class="education">
-          <div class="education-year"></div>
-          <div class="education-items">
-            <div class="education-item">
-              <div class="education-item__label"></div>
-              <div class="education-item__text"></div>
+        <div
+          class="flex flex-1 justify-center h-full xl:w-[850px] xl:block sm:hidden"
+        >
+          <div
+            class="w-3/5 h-full border border-gray-300 rounded-full overflow-hidden p-12 m-auto"
+          >
+            <div
+              class="h-full overflow-hidden flex justify-center items-start rounded-full"
+            >
+              <img class="max-w-none" src="./img/avatar.jpg" alt="avatar" />
             </div>
           </div>
         </div>
-        <div class="education"></div>
-        <div class="education"></div>
-      </section>
-
-      <!-- PROJECT -->
-      <section class="main-projects">
-        <div class="main-projects__text section-text"></div>
-        <div class="main-projects__items">
-          <div class="main-projects__item">
-            <div class="projects__item-image"></div>
-            <div class="projects__item-sublabel"></div>
-            <div class="projects__item-label"></div>
+        <div class="flex flex-1 justify-center h-full lg:w-auto sm:w-full">
+          <div
+            class="flex lg:flex-col sm:flex-row sm:m-4 w-60 sm:w-full justify-evenly items-end lg:text-right sm:text-center h-5/6 ml-auto"
+          >
+            <div class="lg:mr-auto sm:mr-3">
+              <p class="text-gray-500 xl:mb-11 lg:mb-7 font-sans">
+                TOEFL CERTIFICATE
+              </p>
+              <p class="text-7xl xl:text-7xl lg:text-4xl sm:text-3xl">85</p>
+            </div>
+            <div>
+              <p class="text-gray-500 xl:mb-11 lg:mb-7 font-sans">
+                SAT CERTIFICATE
+              </p>
+              <p class="text-7xl xl:text-7xl lg:text-4xl sm:text-3xl">1180</p>
+            </div>
           </div>
-          <div class="main-projects__item"></div>
-          <div class="main-projects__item"></div>
         </div>
       </section>
 
-      <!-- QUOTES -->
-      <section class="main-quotes"></section>
+      <!-- Brand -->
+      <section class="lg:py-12 sm:pb-6 border-b border-black">
+        <!-- <div class="flex justify-center items-center">
+          <img src="./img/brand.png" alt="brand" />
+        </div> -->
+      </section>
 
-      <!-- INSTAGRAM IMAGE -->
-      <section class="main-instagram"></section>
+      <!-- Education & Experience -->
+      <section class="xl:py-24 lg:py-12 sm:py-6 border-b border-black">
+        <div class="xl:mb-24 lg:mb-12 sm:mb-6">
+          <p class="text-center xl:text-5xl lg:text-3xl sm:text-2xl">
+            Education & Hornor Awards
+          </p>
+        </div>
 
-      <!-- CALL BRUNO -->
-      <section class="main-call"></section>
+        <div
+          class="flex xl:flex-row lg:flex-col sm:flex-col xl:justify-between sm:justify-center xl:items-start sm:items-center flex-wrap xl:text-left sm:text-center"
+        >
+          <div>
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">Aug 2019 - June 2020</p>
+            <p class="xl:text-2xl lg:text-xl leading-9">
+              Grade 9 - GPA: 3.75/4.0
+            </p>
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">
+              ISHCMC American Acedemy, HCMC, Vietnam
+            </p>
+          </div>
+          <div>
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">Aug 2020 - May 2023</p>
+            <p class="xl:text-2xl lg:text-xl leading-9">
+              Grade 10 - GPA: 3.5/4.0
+            </p>
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">
+              ISHCMC American Acedemy, HCMC, Vietnam
+            </p>
+            <p class="xl:text-2xl lg:text-xl leading-9">
+              Grade 11 - GPA: 3.69/4.0
+            </p>
+          </div>
+          <div>
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">
+              2020 - PRESENT
+            </p>
+            <p class="xl:text-2xl lg:text-xl leading-9">TOEFL 85</p>
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">
+              Reading: 19, Listening: 18, Writing: 25, Speaking: 23
+            </p>
+            <p class="xl:text-2xl lg:text-xl leading-9">SAT 1180</p>
+            <p class="text-gray-500 xl:mb-12 sm:mb-6 font-sans">
+              Math: 650, English: 530
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Leadership and Affiliations -->
+      <section
+        class="xl:py-24 lg:py-12 sm:py-6 xl:pb-48 sm:pb-24 border-b border-black"
+      >
+        <div class="xl:mb-24 lg:mb-12 sm:mb-6">
+          <p class="text-center xl:text-5xl lg:text-3xl sm:text-2xl">
+            Leadership and Affiliations
+          </p>
+        </div>
+
+        <div class="flex lg:justify-evenly sm:justify-unset items-center project w-full">
+          <div class="xl:flex-[32%] xl:max-w-[32%] lg:flex-[48%] lg:max-w-[48%] sm:w-full sm:mr-4">
+            <img
+              class="h-full w-full max-w-none"
+              src="./img/projects/anvn-vex.jpg"
+              alt="aavn vex club"
+            />
+            <p class="text-gray-500 mt-12 mb-3 font-sans truncate">
+              Report and design robots for VEX Competitions
+            </p>
+            <p class="xl:text-3xl lg:text-xl font-sans truncate">
+              AAVN VEX Club
+            </p>
+          </div>
+          <div class="xl:flex-[32%] xl:max-w-[32%] lg:flex-[48%] lg:max-w-[48%] sm:mr-4 sm:w-full">
+            <img src="./img/projects/share.jpg" alt="Share-se" />
+            <p class="text-gray-500 mt-12 mb-3 font-sans truncate">
+              A nonprofit organization that provides English education for poor student
+            </p>
+            <p class="xl:text-3xl lg:text-xl font-sans truncate">Second President of Share-Se</p>
+          </div>
+          <!-- <div class="flex-1 xl:flex-[32%] xl:max-w-[32%] xl:block lg:w-full">
+            <img src="./img/projects/englishclub.jpg" alt="english club" />
+            <p class="text-gray-500 mt-12 mb-3 font-sans truncate">
+              Tran Dai Nghia English Club
+            </p>
+            <p class="xl:text-3xl lg:text-xl font-sans">English Club</p>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- My Advantage -->
+      <section class="xl:py-24 lg:py-12 sm:py-6">
+        <div class="xl:mb-24 lg:mb-12 sm:mb-6">
+          <p class="text-center xl:text-5xl lg:text-3xl sm:text-2xl">
+            My Advantage
+          </p>
+        </div>
+        <div
+          class="flex justify-evenly items-center flex-wrap lg:flex-row sm:flex-col"
+        >
+          <div
+            class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%]"
+          >
+            <div class="flex flex-col justify-between items-center">
+              <div
+                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 lg:h-80 sm:h-56"
+              >
+                <img
+                  class="lg:w-24 sm:w-16"
+                  src="./img/tools/piano.png"
+                  alt="cpp"
+                />
+                <p class="lg:text-5xl sm:text-2xl lg:mt-auto sm:mt-5">5yrs</p>
+              </div>
+              <p>Piano</p>
+            </div>
+          </div>
+          <!-- <div
+            class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%] lg:mt-0 sm:mt-6"
+          >
+            <div class="flex flex-col justify-between items-center">
+              <div
+                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 lg:h-80 sm:h-56"
+              >
+                <img
+                  class="lg:w-24 sm:w-16"
+                  src="./img/tools/french.png"
+                  alt="french"
+                />
+                <p class="lg:text-5xl sm:text-2xl lg:mt-auto sm:mt-5">90%</p>
+              </div>
+              <p>French</p>
+            </div>
+          </div>
+          <div
+            class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%] xl:mt-0 lg:mt-12 sm:mt-6"
+          >
+            <div class="flex flex-col justify-between items-center">
+              <div
+                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 lg:h-80 sm:h-56"
+              >
+                <img
+                  class="lg:w-24 sm:w-16"
+                  src="./img/tools/english.png"
+                  alt="english"
+                />
+                <p class="lg:text-5xl sm:text-2xl lg:mt-auto sm:mt-5">82%</p>
+              </div>
+              <p>English</p>
+            </div>
+          </div>
+          <div
+            class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%] 2xl:mt-0 xl:mt-24 lg:mt-12 sm:mt-6"
+          >
+            <div class="flex flex-col justify-between items-center">
+              <div
+                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 lg:h-80 sm:h-56"
+              >
+                <img
+                  class="lg:w-24 sm:w-16"
+                  src="./img/tools/chess.png"
+                  alt="chess"
+                />
+                <p class="lg:text-5xl sm:text-2xl lg:mt-auto sm:mt-5">93%</p>
+              </div>
+              <p>Chess</p>
+            </div>
+          </div> -->
+          <div
+            class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%] 2xl:mt-0 xl:mt-0 lg:mt-0 sm:mt-6"
+          >
+            <div class="flex flex-col justify-between items-center">
+              <div
+                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 lg:h-80 sm:h-56"
+              >
+                <img
+                  class="lg:w-24 sm:w-16"
+                  src="./img/tools/soccer.png"
+                  alt="soccer"
+                />
+                <p class="lg:text-5xl sm:text-2xl lg:mt-auto sm:mt-5">6yrs</p>
+              </div>
+              <p>Soccer</p>
+            </div>
+          </div>
+          <div
+            class="2xl:flex-[15%] 2xl:max-w-[15%] xl:flex-[33.33%] xl:max-w-[33.33%] 2xl:mt-0 xl:mt-0 lg:mt-12 sm:mt-6"
+          >
+            <div class="flex flex-col justify-between items-center">
+              <div
+                class="flex flex-col justify-evenly items-center bg-gray-100 mb-5 rounded-full p-16 lg:h-80 sm:h-56"
+              >
+                <img
+                  class="lg:w-24 sm:w-16"
+                  src="./img/tools/drums.png"
+                  alt="basketball"
+                />
+                <p class="lg:text-5xl sm:text-2xl lg:mt-auto sm:mt-5">3yrs</p>
+              </div>
+              <p>Drums</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Comments -->
+      <!-- <section class="xl:py-24 lg:py-12 sm:py-6">
+          <div class="flex flex-col justify-between items-center">
+            <div class="flex justify-center items-center">
+              <p
+                class="xl:text-4xl lg:text-2xl sm:text-xl text-center w-2/3 xl:leading-[60px] lg:leading-10"
+              >
+                "Bruno was a real pleasure to work with and we look <br />
+                forward to working with him again. He's definitely the kind
+                of designer you can trust with a project from start to
+                finish. <br />
+                Great services & Recommended!"
+              </p>
+            </div>
+            <p
+              class="xl:text-3xl lg:text-2xl sm:text-xl font-bold mt-12 mb-3"
+            >
+              Jurgen Kloop
+            </p>
+            <p class="font-sans xl:text-xl sm:text-sm">
+              Product Management <span class="text-gray-400">at </span>
+              <a class="text-blue-600" href="https://about.google/"
+                >Google Inc</a
+              >
+            </p>
+      </section> -->
+
+      <!-- Instagram -->
+      <!-- <section class="xl:py-24 lg:py-12 sm:py-6">
+        <div class="xl:mb-24 lg:mb-12 sm:mb-6">
+          <p class="text-center xl:text-5xl lg:text-3xl sm:text-2xl">
+            @dennydattran
+          </p>
+        </div>
+
+        <div class="grid xl:grid-cols-5 lg:grid-cols-3 gap-4 w-full">
+          <img
+            src="https://captainkimo.s3.amazonaws.com/wp-content/uploads/2016/09/22211618/Pine-Glades-Wetlands-Natural-Area-Sunset-Square.jpg"
+            alt=""
+          />
+          <img
+            src="https://images.fineartamerica.com/images-medium-large/nature-square--saddleback-dragonfly-carol-groenen.jpg"
+            alt=""
+          />
+          <img
+            src="https://i.natgeofe.com/k/0570708f-34fd-4373-bcc5-2aa832d76b3d/ww-nature-aurora-canada_square.jpg"
+            alt=""
+          />
+          <img
+            src="https://baynature.org/wp-content/uploads/2019/12/200118-SQUARE.jpg"
+            alt=""
+          />
+          <img
+            src="https://www.wbcsd.org/var/site/storage/images/imperatives/nature-action/201143-1-eng-GB/Nature-Action_720_square.jpg"
+            alt=""
+          />
+        </div>
+      </section> -->
+
+      <!-- Call Bruno -->
+      <!-- <section
+        class="flex justify-center items-center xl:my-28 lg:my-12 sm:my-6"
+      >
+        <a href="#">
+          <img src="./img/call.png" alt="call bruno" />
+        </a>
+      </section> -->
     </main>
 
     <!-- FOOTER -->
     <footer
-      style="display: flex; justify-content: space-between; align-items: center"
+      class="flex justify-between items-center border-t border-black font-sans xl:flex-row sm:flex-col lg:py-12 sm:py-6 lg:flex-wrap"
     >
-      <div class="copyright">
-        <p>© 2021 MOONEX. ALL RIGHTS RESERVED</p>
+      <div class="flex flex-1 justify-center lg:mb-5 sm:mb-3 lg:block sm:hidden">
+        <p class="mr-auto">© 2022 MOONEX. ALL RIGHTS RESERVED</p>
       </div>
-      <div class="email">
-        <p>ANCT304@GMAIL.COM</p>
+      <div class="flex flex-1 justify-center lg:mb-5 sm:mb-3 sm">
+        <p>hoangminhhuynh1204@gmail.com</p>
       </div>
-      <ul
-        class="socials"
-        style="display: flex; justify-content: center; align-items: center"
-      >
-        <li class="social-item">
-          <a href="https://twitter.com/"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-        </li>
-        <li class="social-item">
-          <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
-        </li>
-        <li class="social-item">
-          <a href="http://www.facebook.com.vn/"
-            ><i class="fa-brands fa-facebook-f"></i
-          ></a>
-        </li>
-        <li class="social-item">
-          <a href="https://dribbble.com/"
-            ><i class="fa-brands fa-dribbble"></i
-          ></a>
-        </li>
-      </ul>
+      <div class="flex flex-1 justify-center">
+        <ul class="flex justify-between w-32 ml-auto">
+          <li>
+            <a href="https://twitter.com/"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="http://www.facebook.com.vn/"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://dribbble.com/"
+              ><i class="fa-brands fa-dribbble"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </footer>
 
-    <!-- FONT AWESOME -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
-      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="./owlCarousel/jquery.min.js"></script>
+    <script src="./owlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="./control.js"></script>
   </body>
 </html>
