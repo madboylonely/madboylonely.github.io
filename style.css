@@ -226,6 +226,9 @@ img, video {
 .max-w-\[15\%\] {
   max-width: 15%;
 }
+.max-w-\[30\%\] {
+  max-width: 30%;
+}
 .max-w-\[32\%\] {
   max-width: 32%;
 }
@@ -329,6 +332,9 @@ img, video {
 .items-start {
   align-items: flex-start;
 }
+.flex-\[30\%\] {
+  flex: 30%;
+}
 
 /* DISPLAY */
 .block {
@@ -409,6 +415,10 @@ img, video {
 .border-t {
   border-top: solid;
   border-top-width: 1px;
+}
+.border-r {
+  border-right: solid;
+  border-right-width: 1px;
 }
 .border-black {
   --tw-border-opacity: 1;
