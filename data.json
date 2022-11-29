@@ -1,14 +1,14 @@
 {
     "header": {
-        "header-left": {
-            "link1": "WORKS",
+        "headerLeft": {
+            "link1": "JOKES",
             "link2": "CONTACTS"
         },
-        "header-mid": {
+        "headerMid": {
             "link": "./img/page-logo-new.png",
             "alt": "logo"
         },
-        "header-right": {
+        "headerRight": {
             "twitter": "https://twitter.com/",
             "github": "https://github.com/",
             "facebook": "http://www.facebook.com.vn/",
@@ -18,7 +18,7 @@
     "main": {
         "name": "Huynh Minh Hoang",
         "avatar": {
-            "avatar-left": {
+            "avatarLeft": {
                 "item1": {
                     "lable": "CONTACT",
                     "pag1": "26/19 Le Van Duyet, District Binh Thanh, HCMC, VN",
@@ -26,11 +26,11 @@
                     "pag3": "+84 901 317 459"
                 }
             },
-            "avatar-mid": {
+            "avatarMid": {
                 "link": "./img/avatar.jpg",
                 "alt": "avatar"
             },
-            "avatar-right": {
+            "avatarRight": {
                 "item1": {
                     "lable": "TOEFL CERTIFICATE",
                     "pag": 85
@@ -42,14 +42,14 @@
             }
         },
         "education": {
-            "education-left": {
+            "educationLeft": {
                 "label": "Aug 2019 - June 2020",
                 "item1": {
                     "head": "Grade 9 - GPA: 3.75/4.0",
                     "pag": "ISHCMC American Acedemy, HCMC, Vietnam"
                 }
             },
-            "education-mid": {
+            "educationMid": {
                 "label": "Aug 2020 - May 2023",
                 "item1": {
                     "head": "Grade 10 - GPA: 3.5/4.0",
@@ -60,7 +60,7 @@
                     "pag": "ISHCMC American Acedemy, HCMC, Vietnam"
                 }
             },
-            "education-right": {
+            "educationRight": {
                 "lable": "2020 - PRESENT",
                 "item1": {
                     "head": "TOEFL 85",

@@ -1,6 +1,4 @@
-import data from './data.json' assert { type: 'json' }
-
-
+import data from "./data.json" assert { type: "json" };
 
 // Querry Selector
 let headerLeftLink1 = document.querySelector("#header-left-link1");
@@ -19,7 +17,9 @@ let avatarRightItem1Pag = document.querySelector("#avatar-right-item1-pag");
 let avatarRightItem2Label = document.querySelector("#avatar-right-item2-label");
 let avatarRightItem2Pag = document.querySelector("#avatar-right-item2-pag");
 let educationLeftLable = document.querySelector("#education-left-label");
-let educationLeftItem1Head = document.querySelector("#education-left-item1-head");
+let educationLeftItem1Head = document.querySelector(
+  "#education-left-item1-head"
+);
 let educationLeftItem1Pag = document.querySelector("#education-left-item1-pag");
 let educationMidLable = document.querySelector("#education-mid-label");
 let educationMidItem1Head = document.querySelector("#education-mid-item1-head");
@@ -27,10 +27,18 @@ let educationMidItem1Pag = document.querySelector("#education-mid-item1-pag");
 let educationMidItem2Head = document.querySelector("#education-mid-item2-head");
 let educationMidItem2Pag = document.querySelector("#education-mid-item2-pag");
 let educationRightLable = document.querySelector("#education-right-label");
-let educationRightItem1Head = document.querySelector("#education-right-item1-head");
-let educationRightItem1Pag = document.querySelector("#education-right-item1-pag");
-let educationRightItem2Head = document.querySelector("#education-right-item2-head");
-let educationRightItem2Pag = document.querySelector("#education-right-item2-pag");
+let educationRightItem1Head = document.querySelector(
+  "#education-right-item1-head"
+);
+let educationRightItem1Pag = document.querySelector(
+  "#education-right-item1-pag"
+);
+let educationRightItem2Head = document.querySelector(
+  "#education-right-item2-head"
+);
+let educationRightItem2Pag = document.querySelector(
+  "#education-right-item2-pag"
+);
 let leadershipItem1Link = document.querySelector("#leadership-item1");
 let leadershipItem1Pag = document.querySelector("#leadership-item1-pag");
 let leadershipItem1Head = document.querySelector("#leadership-item1-head");
@@ -49,9 +57,31 @@ let advantageItem3Pag = document.querySelector("#advantage-item3-pag");
 let footerCopyright = document.querySelector("#footer-copyright");
 let footerEmail = document.querySelector("#footer-email");
 
+function handleChangeInnerHTML(selector, innerContent) {
+  selector.innerHTML = innerContent;
+}
 
+// create new file
+function handleCreateJSONFile() {
+    const rawData = data;
+    rawData.header.headerLeft.link1 = "JOKES";
+    
+    // file setting
+    const text = JSON.stringify(rawData);
+    const name = "data.json";
+    const type = "text/plain";
 
+    // create file
+    const a = document.createElement("a");
+    const file = new Blob([text], { type: type });
+    a.href = URL.createObjectURL(file);
+    a.download = name;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
 
-
+}
+handleChangeInnerHTML(headerLeftLink1, "JOKES");
+handleCreateJSONFile();
 
 console.log(data);
