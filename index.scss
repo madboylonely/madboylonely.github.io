@@ -1,0 +1,143 @@
+// Font
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap');
+
+// Global Variables
+$max-width-desktop: 1366px;
+$font-family: 'Barlow Semi Condensed', sans-serif;
+$color-primary-1: linear-gradient(hsl( 39, 89%, 49%),hsl( 40, 84%, 53%));   // Scissors Gradient
+$color-primary-2: linear-gradient(hsl(230, 89%, 62%),hsl(230, 89%, 65%));   // Paper Gradient
+$color-primary-3: linear-gradient(hsl(349, 71%, 52%),hsl(349, 70%, 56%));   // Rock Gradient
+$color-primary-4: linear-gradient(hsl(261, 73%, 60%),hsl(261, 72%, 63%));   // Lizard Gradient
+$color-primary-5: linear-gradient(hsl(189, 59%, 53%),hsl(189, 58%, 57%));   // Cyan
+$color-neutral-1: hsl(229, 25%, 31%);                                         // Dark Text
+$color-neutral-2: hsl(229, 64%, 46%);                                         // Score Text
+$color-neutral-3: hsl(217, 16%, 45%);                                         // Header Outline
+$color-background: linear-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)); // Radial Gradient
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    body {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background: $color-background;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        main {
+            max-width: $max-width-desktop;
+            width: 80%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .score {
+                border: solid 2px rgba(255, 255, 255, 0.5);
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                font-family: $font-family;
+                font-size: 13px;
+                color: $color-neutral-2;
+                letter-spacing: 1px;
+
+                .score-number {
+                    background: rgba(255, 255, 255, 1);
+                    height: 100%;
+                    padding: 10px 40px;
+                    border-radius: 10px;
+
+                    img {
+
+                    };
+
+                    .number {
+                        text-align: center;
+                        font-size: 4em;
+                        font-weight: 700;
+                        color: $color-neutral-1;
+                    }
+                }
+            }
+            
+            .game {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .modal-wrapper {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            z-index: 1;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.25 linear;
+
+            .modal-rules {
+                background: white;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+    
+                .btn-close {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 30px;
+                    font-family: $font-family;
+                    font-size: 25px;
+                    font-weight: 700;
+    
+                    img {
+                        padding: 0;
+                        cursor: pointer;
+                        &:hover {
+                            fill: black;
+                        }
+                    }
+                }
+    
+                img {
+                    padding: 10px 40px 30px;
+                }
+            }
+        }
+
+        .btn-rules {
+            position: absolute;
+            bottom: 30px;
+            right: 50px;
+            border: solid 1px white;
+            border-radius: 7px;
+            background: transparent;
+            color: white;
+            font-family: $font-family;
+            letter-spacing: 3px;
+            padding: 10px 30px;
+            cursor: pointer;
+        }
+
+        .attribution {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+        }
+    }
+}
