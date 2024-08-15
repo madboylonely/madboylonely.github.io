@@ -17,12 +17,14 @@
   max-width: 1366px;
   width: 80%;
   height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 * body main .score {
-  border: solid 2px rgba(255, 255, 255, 0.5);
+  border: solid 2px rgb(184, 188, 209);
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -32,6 +34,7 @@
   font-size: 13px;
   color: hsl(229, 64%, 46%);
   letter-spacing: 1px;
+  grid-area: 1/1/2/6;
 }
 * body main .score .score-number {
   background: rgb(255, 255, 255);
@@ -46,9 +49,61 @@
   color: hsl(229, 25%, 31%);
 }
 * body main .game {
+  grid-area: 2/1/6/6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+* body main .game .game-wrapper {
+  position: relative;
+}
+* body main .game .game-wrapper .game-hand {
+  position: absolute;
+  z-index: 1;
+  width: 160px;
+  height: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+* body main .game .game-wrapper .game-hand img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+* body main .game .game-wrapper .game-hand::before {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 120px;
+  height: 120px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: inset 0 6px 0 0 rgb(184, 188, 209);
+}
+* body main .game .game-wrapper .rock {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  background: linear-gradient(hsl(349, 71%, 52%), hsl(349, 70%, 56%));
+  box-shadow: inset 0 -6px 0 0 hsl(347.05, 76.8%, 35.49%);
+}
+* body main .game .game-wrapper .paper {
+  top: 0;
+  left: 0;
+  transform: translate(-40%, -40%);
+  background: linear-gradient(hsl(230, 89%, 62%), hsl(230, 89%, 65%));
+  box-shadow: inset 0 -6px 0 0 hsl(228.95, 65.52%, 45.49%);
+}
+* body main .game .game-wrapper .scissors {
+  top: 0;
+  right: 0;
+  transform: translate(40%, -40%);
+  background: linear-gradient(hsl(39, 89%, 49%), hsl(40, 84%, 53%));
+  box-shadow: inset 0 -6px 0 0 hsl(28.77, 74.03%, 45.29%);
 }
 * body .modal-wrapper {
   width: 100%;
